@@ -10,7 +10,7 @@
 
 ### 🚀 About Me
 
-DevEx &amp; Systems Thinking Nerd 🧠 • Let’s make it REAL ✌️📈
+AWS Community Builder • DevEx &amp; Systems Thinking Nerd 🧠 • Let’s make it REAL ✌️📈
 
 🔭 &nbsp;I'm currently working on **building developer tools with AWS.**  
 🌱 &nbsp;I'm currently learning **Agentic AI Infrastructure &amp; production-grade DevSecOps.**  
