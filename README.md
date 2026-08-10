@@ -48,6 +48,8 @@ I build things for the web and love to write about what I learn.
 ### 🔗 Connect With Me
 
 <p align="left">
+  <a href="https://linkedin.com/in/faithomobude" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://x.com/faybyndthecloud" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
   <a href="https://instagram.com/faybeyondthecloud" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="https://tiktok.com/@faybeyondthecloud" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" /></a>
   <a href="https://dev.to/faithomobude" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="Dev.to" /></a>
@@ -75,28 +77,44 @@ I build things for the web and love to write about what I learn.
 
 ### 📝 Latest DEV.to Articles
 
-<a href="https://dev.to/faithomobude/beyond-the-hype-the-realignment-of-ai-power-and-the-rise-of-model-agnostic-infrastructure-1h7n" target="_blank" rel="noopener noreferrer">
-  <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftcb1ho0y2tiuhli0a8ug.png" alt="Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure" width="100%" style="border-radius:8px;margin-bottom:8px;" />
-</a>
-**Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure** — 3/10/2026
-  
-Just as we've seen in the DevOps world, most organizations adopt AI tools, but few truly understand......
-
-<a href="https://dev.to/faithomobude/github-copilot-cli-challenge-i-built-an-ai-mentor-in-my-terminal-9g7" target="_blank" rel="noopener noreferrer">
-  <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffi4rtoryysdh2ex2a8i9.png" alt="GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal" width="100%" style="border-radius:8px;margin-bottom:8px;" />
-</a>
-**GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal** — 2/15/2026
-  
-**This is a submission for the GitHub Copilot CLI Challenge           What I Built   I didn't build......
-
-<a href="https://dev.to/faithomobude/hey-devto-1dna" target="_blank" rel="noopener noreferrer">
-  <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F28k6uqz7qb81msmbeqpw.jpeg" alt="Hey Dev.to 👋" width="100%" style="border-radius:8px;margin-bottom:8px;" />
-</a>
-**Hey Dev.to 👋** — 1/20/2026
-  
-Hey Dev.to Community 👋  My name is Faith Omobude, an aspiring Cloud/DevOps Engineer with a passion......
-
-[➜ See more on DEV.to](https://dev.to/faithomobude)
+<div class="devto-preview">
+  <div class="devto-grid">
+    <article class="devto-card">
+      <a class="devto-cover" href="https://dev.to/faithomobude/beyond-the-hype-the-realignment-of-ai-power-and-the-rise-of-model-agnostic-infrastructure-1h7n" target="_blank" rel="noopener noreferrer">
+        <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftcb1ho0y2tiuhli0a8ug.png" alt="Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure" />
+      </a>
+      <div class="devto-body">
+        <h4 class="devto-title"><a href="https://dev.to/faithomobude/beyond-the-hype-the-realignment-of-ai-power-and-the-rise-of-model-agnostic-infrastructure-1h7n" target="_blank" rel="noopener noreferrer">Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure</a></h4>
+        <p class="devto-desc">Just as we&#39;ve seen in the DevOps world, most organizations adopt AI tools, but few truly understand...</p>
+        <div class="devto-tags"><span class="devto-tag">#devops</span><span class="devto-tag">#ai</span><span class="devto-tag">#sre</span><span class="devto-tag">+1</span></div>
+        <div class="devto-meta"><span class="meta-author">Faith Omobude</span> <span class="meta-sep">•</span> <span class="meta-date">3/10/2026</span> <a class="devto-read" href="https://dev.to/faithomobude/beyond-the-hype-the-realignment-of-ai-power-and-the-rise-of-model-agnostic-infrastructure-1h7n" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
+      </div>
+    </article>
+    <article class="devto-card">
+      <a class="devto-cover" href="https://dev.to/faithomobude/github-copilot-cli-challenge-i-built-an-ai-mentor-in-my-terminal-9g7" target="_blank" rel="noopener noreferrer">
+        <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffi4rtoryysdh2ex2a8i9.png" alt="GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal" />
+      </a>
+      <div class="devto-body">
+        <h4 class="devto-title"><a href="https://dev.to/faithomobude/github-copilot-cli-challenge-i-built-an-ai-mentor-in-my-terminal-9g7" target="_blank" rel="noopener noreferrer">GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal</a></h4>
+        <p class="devto-desc">**This is a submission for the GitHub Copilot CLI Challenge What I Built I didn&#39;t build...</p>
+        <div class="devto-tags"><span class="devto-tag">#devchallenge</span><span class="devto-tag">#githubchallenge</span><span class="devto-tag">#cli</span><span class="devto-tag">+1</span></div>
+        <div class="devto-meta"><span class="meta-author">Faith Omobude</span> <span class="meta-sep">•</span> <span class="meta-date">2/15/2026</span> <a class="devto-read" href="https://dev.to/faithomobude/github-copilot-cli-challenge-i-built-an-ai-mentor-in-my-terminal-9g7" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
+      </div>
+    </article>
+    <article class="devto-card">
+      <a class="devto-cover" href="https://dev.to/faithomobude/hey-devto-1dna" target="_blank" rel="noopener noreferrer">
+        <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F28k6uqz7qb81msmbeqpw.jpeg" alt="Hey Dev.to 👋" />
+      </a>
+      <div class="devto-body">
+        <h4 class="devto-title"><a href="https://dev.to/faithomobude/hey-devto-1dna" target="_blank" rel="noopener noreferrer">Hey Dev.to 👋</a></h4>
+        <p class="devto-desc">Hey Dev.to Community 👋 My name is Faith Omobude, an aspiring Cloud/DevOps Engineer with a passion...</p>
+        <div class="devto-tags"><span class="devto-tag">#cloud</span><span class="devto-tag">#devops</span><span class="devto-tag">#beginners</span><span class="devto-tag">+1</span></div>
+        <div class="devto-meta"><span class="meta-author">Faith Omobude</span> <span class="meta-sep">•</span> <span class="meta-date">1/20/2026</span> <a class="devto-read" href="https://dev.to/faithomobude/hey-devto-1dna" target="_blank" rel="noopener noreferrer">Read more ↗</a></div>
+      </div>
+    </article>
+  </div>
+  <div style="margin-top:16px;text-align:left;"><a class="btn btn-primary" href="https://dev.to/faithomobude" target="_blank" rel="noopener noreferrer">See more →</a></div>
+</div>
 
 ---
 <p align="center"><i>⭐️ From <a href="https://github.com/CloudFay">CloudFay</a></i></p>
