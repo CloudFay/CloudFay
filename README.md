@@ -5,10 +5,12 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=2f81f7&center=true&vCenter=true&width=685&height=44&lines=Application%20Developer%20%7C%7C%20DevSecOps%20Engineer" alt="Typing headlines" />
+  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=56d4dd&center=true&vCenter=true&width=900&height=44&lines=Application%20Developer%20%7C%7C%20DevSecOps%20Engineer%20%7C%7C%20AWS%20Community%20Builder" alt="Typing headlines" />
 </p>
 
 ### 🚀 About Me
+
+I build things for the web and love to write about what I learn.
 
 🔭 &nbsp;I'm currently working on **building developer tools with AWS.**  
 🌱 &nbsp;I'm currently learning **Agentic AI Infrastructure &amp; production-grade DevSecOps.**  
@@ -76,23 +78,25 @@
 <a href="https://dev.to/faithomobude/beyond-the-hype-the-realignment-of-ai-power-and-the-rise-of-model-agnostic-infrastructure-1h7n" target="_blank" rel="noopener noreferrer">
   <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ftcb1ho0y2tiuhli0a8ug.png" alt="Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure" width="100%" style="border-radius:8px;margin-bottom:8px;" />
 </a>
-**[Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure](https://dev.to/faithomobude/beyond-the-hype-the-realignment-of-ai-power-and-the-rise-of-model-agnostic-infrastructure-1h7n)** — 3/10/2026
+**Beyond the Hype: The Realignment of AI Power and the Rise of Model-Agnostic Infrastructure** — 3/10/2026
   
 Just as we've seen in the DevOps world, most organizations adopt AI tools, but few truly understand......
 
 <a href="https://dev.to/faithomobude/github-copilot-cli-challenge-i-built-an-ai-mentor-in-my-terminal-9g7" target="_blank" rel="noopener noreferrer">
   <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffi4rtoryysdh2ex2a8i9.png" alt="GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal" width="100%" style="border-radius:8px;margin-bottom:8px;" />
 </a>
-**[GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal](https://dev.to/faithomobude/github-copilot-cli-challenge-i-built-an-ai-mentor-in-my-terminal-9g7)** — 2/15/2026
+**GitHub Copilot CLI Challenge: I Built an AI Mentor in My Terminal** — 2/15/2026
   
 **This is a submission for the GitHub Copilot CLI Challenge           What I Built   I didn't build......
 
 <a href="https://dev.to/faithomobude/hey-devto-1dna" target="_blank" rel="noopener noreferrer">
   <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F28k6uqz7qb81msmbeqpw.jpeg" alt="Hey Dev.to 👋" width="100%" style="border-radius:8px;margin-bottom:8px;" />
 </a>
-**[Hey Dev.to 👋](https://dev.to/faithomobude/hey-devto-1dna)** — 1/20/2026
+**Hey Dev.to 👋** — 1/20/2026
   
 Hey Dev.to Community 👋  My name is Faith Omobude, an aspiring Cloud/DevOps Engineer with a passion......
+
+[➜ See more on DEV.to](https://dev.to/faithomobude)
 
 ---
 <p align="center"><i>⭐️ From <a href="https://github.com/CloudFay">CloudFay</a></i></p>
