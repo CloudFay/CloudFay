@@ -1,0 +1,40 @@
+name: Update DEV.to Articles
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  update-devto:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update DEV.to articles
+        run: node .github/scripts/update-devto.js
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          if git diff --quiet README.md; then
+            echo "No README changes detected"
+            exit 0
+          fi
+
+          git add README.md
+          git commit -m "chore: update DEV.to articles"
+          git push
