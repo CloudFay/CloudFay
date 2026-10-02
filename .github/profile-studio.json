@@ -1,4 +1,13 @@
 {
+  "version": 2,
+  "hero": {
+    "profile_views": true,
+    "portrait": true
+  },
+  "activity": {
+    "enabled": true,
+    "theme": "github-compact"
+  },
   "devto": {
     "post_count": 3,
     "username": "faithomobude",
