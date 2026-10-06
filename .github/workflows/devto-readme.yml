@@ -6,6 +6,10 @@ on:
 
   workflow_dispatch:
 
+concurrency:
+  group: update-devto
+  cancel-in-progress: false
+
 jobs:
   update-devto:
     runs-on: ubuntu-latest
