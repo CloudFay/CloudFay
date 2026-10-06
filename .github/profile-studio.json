@@ -8,6 +8,9 @@
     "enabled": true,
     "theme": "github-compact"
   },
+  "snake": {
+    "enabled": true
+  },
   "devto": {
     "post_count": 3,
     "username": "faithomobude",
