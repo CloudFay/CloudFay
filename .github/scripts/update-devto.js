@@ -7,6 +7,7 @@ const README_PATH =
 
 const START_MARKER = "<!-- DEVTO:START -->";
 const END_MARKER = "<!-- DEVTO:END -->";
+const INSERT_BEFORE = "### 💭 Dev Quote";
 
 function readConfig() {
   if (!fs.existsSync(CONFIG_PATH)) {
@@ -28,20 +29,12 @@ function readConfig() {
   const devto = config.devto || {};
 
   return {
-    username: String(
-      devto.username || ""
-    ).trim(),
-
+    username: String(devto.username || "").trim(),
     postCount: Math.min(
-      Math.max(
-        Number(devto.post_count) || 5,
-        1
-      ),
+      Math.max(Number(devto.post_count) || 5, 1),
       20
     ),
-
     enabled: devto.enabled === true,
-
     automation: devto.automation === true,
   };
 }
@@ -131,10 +124,7 @@ function generateMarkdown(articles, username) {
   ];
 
   articles.forEach((article) => {
-    const title = escapeHtml(
-      article.title || ""
-    );
-
+    const title = escapeHtml(article.title || "");
     const url = safeUrl(article.url);
 
     if (!url) {
@@ -142,25 +132,17 @@ function generateMarkdown(articles, username) {
     }
 
     const coverImage = safeUrl(
-      article.cover_image ||
-      article.social_image ||
-      ""
+      article.cover_image || article.social_image || ""
     );
 
-    const description = String(
-      article.description || ""
-    )
+    const description = String(article.description || "")
       .replace(/\s+/g, " ")
       .trim();
 
-    const desc = escapeHtml(
-      description.substring(0, 160)
-    );
+    const desc = escapeHtml(description.substring(0, 160));
 
     const date = article.published_at
-      ? new Date(
-          article.published_at
-        ).toLocaleDateString()
+      ? new Date(article.published_at).toLocaleDateString()
       : "";
 
     let tags = [];
@@ -177,11 +159,7 @@ function generateMarkdown(articles, username) {
     }
 
     const visibleTags = tags.slice(0, 3);
-
-    const moreTags = Math.max(
-      0,
-      tags.length - visibleTags.length
-    );
+    const moreTags = Math.max(0, tags.length - visibleTags.length);
 
     const tagHtml = visibleTags
       .map(
@@ -194,9 +172,7 @@ function generateMarkdown(articles, username) {
 
     const finalTagHtml =
       moreTags > 0
-        ? `${tagHtml}${
-            tagHtml ? " " : ""
-          }<code>+${moreTags}</code>`
+        ? `${tagHtml}${tagHtml ? " " : ""}<code>+${moreTags}</code>`
         : tagHtml;
 
     const author =
@@ -204,42 +180,32 @@ function generateMarkdown(articles, username) {
       article.user?.username ||
       username;
 
-    lines.push(
-      '<td width="33%" valign="top">'
-    );
+    lines.push('<td width="33%" valign="top">');
 
     if (coverImage) {
-      lines.push(
-        `<a href="${escapeHtml(url)}">`
-      );
-
+      lines.push(`<a href="${escapeHtml(url)}">`);
       lines.push(
         `<img src="${escapeHtml(
           coverImage
         )}" width="100%" alt="${title}" />`
       );
-
       lines.push("</a>");
       lines.push("<br>");
     }
 
     lines.push("<br>");
-
     lines.push(
       `<strong><a href="${escapeHtml(
         url
       )}">${title}</a></strong>`
     );
-
     lines.push("<br><br>");
 
     if (desc) {
       lines.push(desc);
-
       if (description.length > 160) {
         lines.push("...");
       }
-
       lines.push("<br><br>");
     }
 
@@ -249,21 +215,12 @@ function generateMarkdown(articles, username) {
     }
 
     lines.push(
-      `<sub>${escapeHtml(author)}${
-        date
-          ? ` · ${escapeHtml(date)}`
-          : ""
-      }</sub>`
+      `<sub>${escapeHtml(author)}${date ? ` · ${escapeHtml(date)}` : ""}</sub>`
     );
-
     lines.push("<br><br>");
-
     lines.push(
-      `<a href="${escapeHtml(
-        url
-      )}"><strong>Read more ↗</strong></a>`
+      `<a href="${escapeHtml(url)}"><strong>Read more ↗</strong></a>`
     );
-
     lines.push("</td>");
   });
 
@@ -272,9 +229,7 @@ function generateMarkdown(articles, username) {
   lines.push("");
 
   const profileUrl =
-    `https://dev.to/${encodeURIComponent(
-      username
-    )}`;
+    `https://dev.to/${encodeURIComponent(username)}`;
 
   lines.push(
     `[![See more](https://img.shields.io/badge/See%20more-%E2%86%92-c900a8?style=for-the-badge)](${profileUrl})`
@@ -291,54 +246,59 @@ function updateReadme(content) {
     throw new Error("README.md not found");
   }
 
-  const readme = fs.readFileSync(
-    README_PATH,
-    "utf8"
-  );
+  const readme = fs.readFileSync(README_PATH, "utf8");
 
-  const start = readme.indexOf(
-    START_MARKER
-  );
+  const start = readme.indexOf(START_MARKER);
+  const end = readme.indexOf(END_MARKER);
 
-  const end = readme.indexOf(
-    END_MARKER
-  );
+  // Normal path: replace the existing managed section.
+  if (start !== -1 || end !== -1) {
+    if (start === -1 || end === -1) {
+      throw new Error(
+        "DEV.to README markers are incomplete; both START and END markers are required"
+      );
+    }
 
-  if (start === -1 || end === -1) {
-    throw new Error(
-      "DEV.to README markers were not found"
-    );
-  }
+    if (end < start) {
+      throw new Error(
+        "DEV.to README markers are in the wrong order"
+      );
+    }
 
-  if (end < start) {
-    throw new Error(
-      "DEV.to README markers are in the wrong order"
-    );
-  }
+    const endPosition = end + END_MARKER.length;
+    const updated =
+      readme.substring(0, start) +
+      content +
+      readme.substring(endPosition);
 
-  const endPosition =
-    end + END_MARKER.length;
+    if (updated === readme) {
+      console.log("No README changes detected.");
+      return;
+    }
 
-  const updated =
-    readme.substring(0, start) +
-    content +
-    readme.substring(endPosition);
-
-  if (updated === readme) {
-    console.log(
-      "No README changes detected."
-    );
+    fs.writeFileSync(README_PATH, updated, "utf8");
+    console.log("README.md successfully updated.");
     return;
   }
 
-  fs.writeFileSync(
-    README_PATH,
-    updated,
-    "utf8"
-  );
+  // Recovery path: a manual README redesign removed the markers.
+  // Re-create the managed section before the Dev Quote section.
+  const anchorIndex = readme.indexOf(INSERT_BEFORE);
 
+  if (anchorIndex === -1) {
+    throw new Error(
+      `DEV.to README markers are missing and insertion anchor "${INSERT_BEFORE}" was not found`
+    );
+  }
+
+  const prefix = readme.slice(0, anchorIndex).replace(/\n+$/, "");
+  const suffix = readme.slice(anchorIndex);
+
+  const updated = `${prefix}\n\n${content}\n\n${suffix}`;
+
+  fs.writeFileSync(README_PATH, updated, "utf8");
   console.log(
-    "README.md successfully updated."
+    "DEV.to README markers were missing; managed section was restored automatically."
   );
 }
 
@@ -346,16 +306,12 @@ async function main() {
   const config = readConfig();
 
   if (!config.enabled) {
-    console.log(
-      "DEV.to articles are disabled."
-    );
+    console.log("DEV.to articles are disabled.");
     return;
   }
 
   if (!config.automation) {
-    console.log(
-      "DEV.to automation is disabled."
-    );
+    console.log("DEV.to automation is disabled.");
     return;
   }
 
@@ -369,14 +325,6 @@ async function main() {
     `Fetching latest DEV.to articles for ${config.username}...`
   );
 
-  /*
-   * Always fetch the latest 20 articles.
-   *
-   * post_count controls display only.
-   * This means changing post_count from 3 to 5
-   * does not change which articles are considered
-   * latest.
-   */
   const articles = await fetchArticles(
     config.username,
     20
@@ -386,14 +334,6 @@ async function main() {
     `Found ${articles.length} DEV.to articles.`
   );
 
-  /*
-   * Display only the number configured by the user.
-   *
-   * Example:
-   *   post_count = 3  -> newest 3 articles
-   *   post_count = 5  -> newest 5 articles
-   *   post_count = 10 -> newest 10 articles
-   */
   const visibleArticles = articles.slice(
     0,
     config.postCount
